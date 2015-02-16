@@ -1,0 +1,37 @@
+
+<div class="container-fluid">
+  <div class="row header">
+  		<div class="col-md-3">
+  			<span class="title">Customer List</span>
+			<input type="button" value="Add new"></input>
+  		</div>
+  		<div class="col-md-5 error">
+  			<span></span>
+  		</div>
+  		<div class="col-md-4">
+  			Search: <input ng-model="query">
+  			<input id="orderByButton" type="button" value="Asc" ng-click="orderList()"></input>
+  		</div>
+  </div>
+
+  <div class="row container">
+    <div class="col-md-6 listContainer">
+      <ul class="list">
+        <li ng-repeat="customer in customerList | filter:query | orderBy:orderBy" class="thumbnail" ng-click="selectedCustomer(customer)">
+          <div>{{customer.name}}</div>
+          <div>{{customer.age}}</div>
+          <div>{{customer.location}}</div>
+          <div>{{customer.Email}}</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-6">
+    	<div ng-hide="selectedCust == null">
+    		<div class="title">{{selectedCust.name}}</div>
+	    	<div>Location: {{selectedCust.location}}</div>
+	    	<div>Email: {{selectedCust.Email}}</div>
+    	</div>
+    </div>
+  </div>
+</div>

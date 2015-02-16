@@ -1,0 +1,32 @@
+/* app css stylesheet */
+
+.header {
+	height: 50px;
+	padding-top: 10px;
+	border-bottom: 2px solid gray;
+	margin: auto;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 20px;
+	padding-right: 10px;
+}
+
+.error {
+	padding-top: 7px;
+	
+}
+
+.container {
+	padding-top: 10px;
+}
+
+.listContainer {
+	padding-left: 0px;
+	border-right: 2px solid gray;
+}
+
+.list {
+	padding-left: 0px;
+}

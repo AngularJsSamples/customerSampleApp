@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Customer4",
+        "age": 4, 
+        "location": "abc4", 
+        "Email": "abc4@gmail.com"
+    },
+    {
+        "name": "Customer1",
+        "age": 1, 
+        "location": "abc1", 
+        "Email": "abc1@gmail.com"
+    }, 
+    {
+        "name": "Customer3",
+        "age": 3, 
+        "location": "abc3", 
+        "Email": "abc3@gmail.com"
+    },
+    {
+        "name": "Customer6",
+        "age": 6, 
+        "location": "abc6", 
+        "Email": "abc6@gmail.com"
+    },
+    {
+        "name": "Customer6",
+        "age": 6, 
+        "location": "abc6", 
+        "Email": "abc6@gmail.com"
+    },
+    {
+        "name": "Customer3",
+        "age": 3, 
+        "location": "abc3", 
+        "Email": "abc3@gmail.com"
+    },
+    {
+        "name": "Customer2",
+        "age": 2, 
+        "location": "abc2", 
+        "Email": "abc2@gmail.com"
+    },
+    {
+        "name": "Customer5",
+        "age": 5, 
+        "location": "abc5", 
+        "Email": "abc5@gmail.com"
+    }
+]
