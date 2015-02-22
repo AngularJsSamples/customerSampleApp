@@ -30,3 +30,23 @@
 .list {
 	padding-left: 0px;
 }
+
+td {
+    padding: 15px;
+}
+
+.modal-header a {
+	float: right;
+}
+
+.modal-header h3 {
+	display: inline;
+}
+
+.error {
+	color: red;
+}
+
+.removeButton {
+	float: right;
+}

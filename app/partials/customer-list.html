@@ -3,7 +3,7 @@
   <div class="row header">
   		<div class="col-md-3">
   			<span class="title">Customer List</span>
-			<input type="button" value="Add new"></input>
+			<input type="button" value="Add new" ng-click="addNewCustomerTapped()"></input>
   		</div>
   		<div class="col-md-5 error">
   			<span></span>
@@ -18,8 +18,8 @@
     <div class="col-md-6 listContainer">
       <ul class="list">
         <li ng-repeat="customer in customerList | filter:query | orderBy:orderBy" class="thumbnail" ng-click="selectedCustomer(customer)">
+          <div class="removeButton"><a ng-click="removeCustomer(customer)">X</a></div>
           <div>{{customer.name}}</div>
-          <div>{{customer.age}}</div>
           <div>{{customer.location}}</div>
           <div>{{customer.Email}}</div>
         </li>
@@ -32,6 +32,9 @@
 	    	<div>Location: {{selectedCust.location}}</div>
 	    	<div>Email: {{selectedCust.Email}}</div>
     	</div>
+      <div ng-show="selectedCust == null">
+        Please select customer.
+      </div>
     </div>
   </div>
 </div>

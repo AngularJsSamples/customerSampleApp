@@ -5,7 +5,8 @@
 var customersApp = angular.module('customersApp', [
 	'ngRoute',
 	'customerAppControllers',
-	'customerAppServices'
+	'customerAppServices',
+	'ui.bootstrap'
 	]);
 
 customersApp.config(['$routeProvider', 

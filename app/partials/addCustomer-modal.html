@@ -1,0 +1,28 @@
+<div class="modal-header">
+    <h3 class="modal-title">Add Customer</h3></span>
+    <a ng-click="close()">close</a>
+</div>
+
+<form name="addCustomerForm" novalidate>
+	<div class="modal-body">   
+    	<table>
+	    	<tr>
+	    		<td>Name:</td>
+	    		<td><input type="text" ng-model="customer.name" required></td>
+	    	</tr>
+	    	<tr>
+	    		<td>Location:</td>
+	    		<td><input type="text" ng-model="customer.location" required></td>
+	    	</tr>
+	    	<tr>
+	    		<td>Email:</td>
+	    		<td><input type="email" ng-model="customer.Email" name="cusEmail" required></td>
+	    		<td class="error" ng-show="addCustomerForm.cusEmail.$error.email">Please enter a valid email</td>
+	    	</tr>
+	    </table>
+	</div>
+
+	<div class="modal-footer">
+	    <input type="submit" ng-disabled="addCustomerForm.$invalid" ng-click="addCustomer(customer)" value="Add" />
+	</div>
+</form>
